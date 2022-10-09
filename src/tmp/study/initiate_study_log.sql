@@ -1,0 +1,12 @@
+
+DROP TABLE IF EXISTS study_logs;
+
+ CREATE TABLE study_logs (
+    id INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    study_date VARCHAR(10) NOT NULL,
+    study_time VARCHAR(5) NOT NULL,
+    content VARCHAR(200),
+    rate INTEGER,
+    goal VARCHAR(200),
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+ ) DEFAULT CHARACTER SET=utf8mb4;
